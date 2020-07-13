@@ -7,10 +7,10 @@ import LandingPage from 'pages/LandingPage';
 function App() {
   return (
     <div className="App">
-     {/* <Router>
+      <Router>
        <Route exact path="/" component={LandingPage}/>
-     </Router> */}
-     Hai Dunia
+     </Router> 
+     
     </div>
   );
 }
