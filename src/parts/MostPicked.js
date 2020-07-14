@@ -1,52 +1,59 @@
 import React from "react";
 import Button from "elements/Button";
+import Fade from "react-reveal/Fade";
 
 export default function MostPicked(props) {
   return (
-    <section className="container" ref={props.refMostPicked} >
-      <h4 className="mb-3">Most Picked</h4>
-      <div className="container-grid">
-        {props.data.map((item, index) => {
-          return (
-            <div
+    <section className="container" ref={props.refMostPicked}>
+      <Fade bottom>
+        <h4 className="mb-3">Most Picked</h4>
+        <div className="container-grid">
+          {props.data.map((item, index) => {
+            return (
+              <div
                 key={`mostpicked-${index}`}
-              className={`item  column-4 
+                className={`item  column-4 
             ${index === 0 ? " row-2" : " row-1"} `}
-            >
-              <div className="card card-featured">
-                <div className="tag">
-                  $ {item.price}
-                  <span className="font-weight-light"> per {item.unit}</span>
-                </div>
+              >
+                <Fade bottom delay={500 * index}>
+                  <div className="card card-featured">
+                    <div className="tag">
+                      $ {item.price}
+                      <span className="font-weight-light">
+                        {" "}
+                        per {item.unit}
+                      </span>
+                    </div>
 
-                <figure>
-                  <div className="img-wrapper">
-                    <img
-                      src={item.imageUrl}
-                      alt={item.name}
-                      className="img-cover"
-                    />
+                    <figure>
+                      <div className="img-wrapper">
+                        <img
+                          src={item.imageUrl}
+                          alt={item.name}
+                          className="img-cover"
+                        />
+                      </div>
+                    </figure>
+
+                    <div className="meta-wrapper">
+                      <Button
+                        type="link"
+                        className="streched-link d-block text-white"
+                        href={`/properties/${item._id}`}
+                      >
+                        <h5>{item.name}</h5>
+                      </Button>
+                      <span>
+                        {item.city},{item.country}
+                      </span>
+                    </div>
                   </div>
-                </figure>
-
-                <div className="meta-wrapper">
-                  <Button
-                    type="link"
-                    className="streched-link d-block text-white"
-                    href={`/properties/${item._id}`}
-                  >
-                      <h5>{item.name}</h5>
-                  </Button>
-                  <span>
-                    {item.city},{item.country}
-                  </span>
-                </div>
+                </Fade>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
 
-        {/* contoh templatenya
+          {/* contoh templatenya
                    <div className="item column-4 row-2">
                        <div className="card">Card 1</div>
                    </div>
@@ -62,7 +69,8 @@ export default function MostPicked(props) {
                    <div className="item column-4 row-1">
                        <div className="card">Card 5</div>
                    </div> */}
-      </div>
+        </div>
+      </Fade>
     </section>
   );
 }
