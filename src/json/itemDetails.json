@@ -1,6 +1,6 @@
 {
   "_id": "asd1293uasdads1",
-  "name": "Village Angga",
+  "name": "Solid Sleep",
   "type": "Hotel",
   "imageUrls": [
     {
@@ -17,7 +17,7 @@
     }
   ],
   "country": "Indonesia",
-  "city": "Bogor",
+  "city": "Bandung",
   "price": "52",
   "unit": "night",
   "isPopular": true,
@@ -102,38 +102,38 @@
   "categories": [
     {
       "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
+      "name": "Nearest Treasure",
       "items": [
         {
           "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
-          "imageUrl": "/images/treasure-1.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "name": "Floating Market Lembang",
+          "imageUrl": "/images/treasuredetail-1.jpg",
+          "country": "Lembang",
+          "city": "West Java",
           "isPopular": false
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
-          "imageUrl": "/images/treasure-2.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "name": "Pemandian Air Panas Maribaya",
+          "imageUrl": "/images/treasuredetail-2.jpg",
+          "country": "Ciater",
+          "city": "West Java",
           "isPopular": false
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
-          "imageUrl": "/images/treasure-3.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "name": "Kampung Korea",
+          "imageUrl": "/images/treasuredetail-3.jpg",
+          "country": "Lembang",
+          "city": "West Java",
           "isPopular": true
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
-          "imageUrl": "/images/treasure-4.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "name": "Orchid Forest",
+          "imageUrl": "/images/treasuredetail-4.jpg",
+          "country": "Cimahi",
+          "city": "West Java",
           "isPopular": false
         }
       ]
